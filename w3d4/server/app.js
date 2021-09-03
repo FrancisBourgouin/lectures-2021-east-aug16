@@ -62,14 +62,15 @@ const isValidUser = (email, userDB) => {
   return currentUser
 }
 
-// app.use((req, res, next) => {
-//   const email = req.session.email
-//   console.log(req.path)
-//   if (req.path === "/" || req.path === "/login" || isValidUser(email, userDatabaseIshObj)) {
-//     return next()
-//   }
-//   res.redirect('/')
-// })
+app.use((req, res, next) => {
+  const email = req.session.email
+  const coolPaths = ["/", "/login", "/api/users"]
+  console.log(req.path)
+  if (coolPaths.includes(req.path) || isValidUser(email, userDatabaseIshObj)) {
+    return next()
+  }
+  res.redirect('/')
+})
 
 
 app.get("/", (req, res) => {
