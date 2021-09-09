@@ -1,0 +1,19 @@
+body ul {
+  display: block;
+}
+body ul li {
+  text-decoration: underline;
+}
+body ul li ul {
+  display: flex;
+}
+body ul li ul li {
+  color: #BADA55;
+}
+
+body {
+  background-color: #BADA55;
+  padding: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */
