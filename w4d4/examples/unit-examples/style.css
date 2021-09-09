@@ -1,0 +1,43 @@
+body * {
+  display:block;
+  margin:20px;
+}
+
+section{
+  font-size:1em;
+}
+article{
+  font-size:0.6em;
+}
+article p {
+  font-size:1em;
+  max-width:75ch;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size:24px; 
+}
+
+h1{
+  font-size:2em;
+}
+h2{
+  font-size:1.5em;
+}
+h3{
+  font-size:1.25em;
+}
+
+button{
+  padding:1em 2em;
+  transform:rotate(180deg);
+}
+/*
+EM
+REMS
+VW
+VH
+VMIN
+VMAX
+ch
+*/
