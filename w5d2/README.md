@@ -69,6 +69,7 @@ Ex.:
 
 We use naming conventions to increase consistency which provides us with some level of predictability. We can write queries faster if we don't have to look up column names constantly. Follow these rules to start with:
 
+
 - Use `snake_case` for table and column names.
 - In the ERD, table names should be singular
 - In the DB, pluralize tables names, column names should be singular.
