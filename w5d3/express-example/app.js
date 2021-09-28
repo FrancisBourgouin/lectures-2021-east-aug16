@@ -40,8 +40,6 @@ app.get("/authors", (req, res) => {
 })
 
 
-
-
 app.get("/authors/:author_id", (req, res) => {
   // Extract the author id from req parameters  
   const { author_id } = req.params
