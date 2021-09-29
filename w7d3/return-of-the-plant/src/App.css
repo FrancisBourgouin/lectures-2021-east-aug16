@@ -1,0 +1,16 @@
+.App {
+	text-align: center;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+main h1 {
+	width: 100%;
+}
+.PlantButBetter {
+	width: 30vw;
+	margin: 1em;
+	border: 2px solid black;
+}

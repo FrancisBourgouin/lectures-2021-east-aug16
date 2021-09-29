@@ -15,10 +15,18 @@ const createABlogPostSummary = (data) => {
 	$article.append($p);
 };
 
-const blogPost = createABlogPostSummary(data);
+$.ajax({ url: "/blog/1" }).then((data) => {
+	const blogPost = createABlogPostSummary(data);
+	$("section.posts").append(blogPost);
+});
 
-$("section.posts").append(blogPost);
+const App = () => {
+	const [blogList, setBlogList] = useState([]);
 
+	axios.get("/blog").then((res) => setBlogList(res.data));
+
+	const parsedBlogItems = blogList.map((item) => <BlogPost {...item} />);
+};
 const BlogPost = (props) => {
 	const { title, text, url_text, url, isSummary } = props;
 
