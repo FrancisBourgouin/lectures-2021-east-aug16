@@ -1,0 +1,14 @@
+- Sleeping in
+- Open ended problems (real flow of work)
+- Mostly liked rails
+- Very specific
+- Not as intuitive
+- Bound to die (rails)
+- Confusing
+- Bunch of files
+- Syntax is funky
+- Version problem is annoying
+- Db creation is fun
+- Repetitive work is easy
+- implicit returns (always)
+- force best structure
